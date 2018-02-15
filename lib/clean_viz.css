@@ -1,0 +1,28 @@
+rect {
+  stroke: rgba(0, 0, 0, 0.7);
+  fill: rgba(32, 128, 0, 0.6);
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.title {
+  /*font-family: 'Monotype Sorts', dingbats, 'ITC Zapf Dingbats', fantasy;*/
+  font-size: 32px;
+  text-anchor: middle;
+}
+
+#title-headline {
+  fill: rgb(223, 8, 158)
+}
+
+

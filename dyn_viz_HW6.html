@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Dynamic Visualization - HW6</title>
+  <meta charset="utf-8" />
+  <script src="./lib/d3.v4.min.js" type="text/JavaScript"></script>
+  <script src="./lib/colorbrewer.js" type="text/JavaScript"></script>
+  <script src="./lib/lodash.min.js" type="text/JavaScript"></script>
+  <script src="./lib/assist_viz.js" type="text/JavaScript"></script>
+  <script src="./lib/legend.js" type="text/JavaScript"></script>  
+  <link rel="stylesheet" type="text/css" href="./dyn_viz_HW6.css">
+</head>
+<body>
+<h1>HW6</h1>
+<div id="tooltip" class="hidden">
+    <p><strong><span id = "age">The Age</span>:</strong></p>
+    <p>&nbsp;&nbsp;Monthly Income: $<span id="income">the income</span></p>
+    <p>&nbsp;&nbsp;Distance from Home: <span id="distance">the distance</span></p>
+    <p>&nbsp;&nbsp;Job Satisfaction: <span id="satisfaction">the satisfaction</span></p>
+</div>
+
+<div id="viz"></div>
+<p>Display on...</p>
+<div id="x_controls"><p>X-axis?
+  <button type="button" id="age" class="clicked">Age</button>
+  <button type="button" id="distance">Distance from Home</button>
+  <button type="button" id="income">Monthly Income</button>
+  <button type="button" id="satisfaction">Job Satisfaction</button>
+</p>
+</div>
+<div id="y_controls"><p>Y-axis?
+    <button type="button" id="age">Age</button>
+    <button type="button" id="distance">Distance from Home</button>
+    <button type="button" id="income" class="clicked">Monthly Income</button>
+    <button type="button" id="satisfaction">Job Satisfaction</button>
+</p>
+</div>
+<div id="size_controls"><p>Size?
+    <button type="button" id="age">Age</button>
+    <button type="button" id="distance">Distance from Home</button>
+    <button type="button" id="income">Monthly Income</button>
+    <button type="button" id="satisfaction" class="clicked">Job Satisfaction</button></p>
+</div>
+<div id="color_controls"><p>Color?
+    <button type="button" id="age">Age</button>
+    <button type="button" id="distance" class="clicked">Distance from Home</button>
+    <button type="button" id="income">Monthly Income</button>
+    <button type="button" id="satisfaction">Job Satisfaction</button></p>
+</div>
+</body>
+<footer>
+  <script src="./dyn_viz_HW6.js" type="text/JavaScript"></script>
+</footer>
+</html>
